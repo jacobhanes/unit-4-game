@@ -1,0 +1,16 @@
+header {
+    font-size: 75px;
+}
+body {
+    text-align: center;
+}
+#scoreBox {
+    background-color: #1668A1;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    
+}
+#myScoreBox {
+    background-color: blueviolet;
+    margin-top: 20px;
+}
