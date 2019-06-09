@@ -4,7 +4,7 @@ $(document).ready(function () {
     let losses = 0;
     let myScore = 0;
     let goal = Math.floor(Math.random() * 120) + 19;
-    let gameStarted = false;
+    
     let worthOne = Math.floor(Math.random() * 13)+1;
     let worthTwo = Math.floor(Math.random() * 13)+1;
     let worthThree = Math.floor(Math.random() * 13)+1;
@@ -13,9 +13,10 @@ console.log(goal);
     function initializeGame() {
         goal = Math.floor(Math.random() * 120) + 19;
         myScore = 0;
-        gameStarted = false;
+        console.log(goal)
+        
     }
-
+    
     $("#gemOne").on("click", function () {
 
         $("#gemOne").attr("crystalValue", worthOne);
@@ -28,11 +29,13 @@ console.log(goal);
             console.log("you win")
             wins++;
             $("#wins").text(wins);
+            initializeGame();
         };
         if (myScore > goal){
             console.log("you lose");
             losses++;
             $("#losses").text(losses);
+            initializeGame();
         };
     });
 
@@ -48,11 +51,13 @@ console.log(goal);
             console.log("you win")
             wins++;
             $("#wins").text(wins);
+            initializeGame();
         };
         if (myScore > goal){
             console.log("you lose");
             losses++;
             $("#losses").text(losses);
+            initializeGame();
         };
     });
 
@@ -68,11 +73,13 @@ console.log(goal);
             console.log("you win")
             wins++;
             $("#wins").text(wins);
+            initializeGame();
         };
         if (myScore > goal){
             console.log("you lose");
             losses++;
             $("#losses").text(losses);
+            initializeGame();
         };
     });
 
@@ -88,11 +95,13 @@ console.log(goal);
             console.log("you win")
             wins++;
             $("#wins").text(wins);
+            initializeGame();
         };
         if (myScore > goal){
             console.log("you lose");
             losses++;
             $("#losses").text(losses);
+            initializeGame();
         };
     });
 
