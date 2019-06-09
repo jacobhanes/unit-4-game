@@ -26,9 +26,13 @@ console.log(goal);
         console.log(myScore);
         if (myScore === goal){
             console.log("you win")
+            wins++;
+            $("#wins").text(wins);
         };
         if (myScore > goal){
             console.log("you lose");
+            losses++;
+            $("#losses").text(losses);
         };
     });
 
@@ -42,9 +46,13 @@ console.log(goal);
         console.log(myScore);
         if (myScore === goal){
             console.log("you win")
+            wins++;
+            $("#wins").text(wins);
         };
         if (myScore > goal){
             console.log("you lose");
+            losses++;
+            $("#losses").text(losses);
         };
     });
 
@@ -58,9 +66,13 @@ console.log(goal);
         console.log(myScore);
         if (myScore === goal){
             console.log("you win")
+            wins++;
+            $("#wins").text(wins);
         };
         if (myScore > goal){
             console.log("you lose");
+            losses++;
+            $("#losses").text(losses);
         };
     });
 
@@ -74,9 +86,13 @@ console.log(goal);
         console.log(myScore);
         if (myScore === goal){
             console.log("you win")
+            wins++;
+            $("#wins").text(wins);
         };
         if (myScore > goal){
             console.log("you lose");
+            losses++;
+            $("#losses").text(losses);
         };
     });
 
