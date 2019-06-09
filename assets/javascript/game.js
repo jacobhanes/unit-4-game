@@ -9,7 +9,7 @@ $(document).ready(function () {
     let worthTwo = Math.floor(Math.random() * 13)+1;
     let worthThree = Math.floor(Math.random() * 13)+1;
     let worthFour = Math.floor(Math.random() * 13)+1;
-
+console.log(goal);
     function initializeGame() {
         goal = Math.floor(Math.random() * 120) + 19;
         myScore = 0;
@@ -24,6 +24,12 @@ $(document).ready(function () {
         gemValue = parseInt(gemValue);
         myScore += gemValue;
         console.log(myScore);
+        if (myScore === goal){
+            console.log("you win")
+        };
+        if (myScore > goal){
+            console.log("you lose");
+        };
     });
 
     $("#gemTwo").on("click", function () {
@@ -34,6 +40,12 @@ $(document).ready(function () {
         gemValue = parseInt(gemValue);
         myScore += gemValue;
         console.log(myScore);
+        if (myScore === goal){
+            console.log("you win")
+        };
+        if (myScore > goal){
+            console.log("you lose");
+        };
     });
 
     $("#gemThree").on("click", function () {
@@ -44,6 +56,12 @@ $(document).ready(function () {
         gemValue = parseInt(gemValue);
         myScore += gemValue;
         console.log(myScore);
+        if (myScore === goal){
+            console.log("you win")
+        };
+        if (myScore > goal){
+            console.log("you lose");
+        };
     });
 
     $("#gemFour").on("click", function () {
@@ -54,6 +72,12 @@ $(document).ready(function () {
         gemValue = parseInt(gemValue);
         myScore += gemValue;
         console.log(myScore);
+        if (myScore === goal){
+            console.log("you win")
+        };
+        if (myScore > goal){
+            console.log("you lose");
+        };
     });
 
 
