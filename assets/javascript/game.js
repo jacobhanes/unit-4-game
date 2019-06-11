@@ -19,6 +19,8 @@ $(document).ready(function () {
         worthThree = Math.floor(Math.random() * 13)+1;
         worthFour = Math.floor(Math.random() * 13)+1;
         $("#goalScore").text(goal);
+        myScore = 0;
+        
     }
     initializeGame();
     $("#gemOne").on("click", function () {
@@ -107,12 +109,14 @@ $(document).ready(function () {
             wins++;
             $("#wins").text(wins);
             initializeGame();
+            
         };
         if (myScore > goal){
             console.log("you lose");
             losses++;
             $("#losses").text(losses);
             initializeGame();
+            
         };
         
     });

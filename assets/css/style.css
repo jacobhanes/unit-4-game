@@ -13,4 +13,12 @@ body {
 #myScoreBox {
     background-color: blueviolet;
     margin-top: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+#jesse {
+    background-color: darkgoldenrod;
+    margin-top: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
