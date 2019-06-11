@@ -3,28 +3,35 @@ $(document).ready(function () {
     let wins = 0;
     let losses = 0;
     let myScore = 0;
-    let goal = Math.floor(Math.random() * 120) + 19;
-    
+    let goal = Math.floor(Math.random() * 102) + 19;
     let worthOne = Math.floor(Math.random() * 13)+1;
     let worthTwo = Math.floor(Math.random() * 13)+1;
     let worthThree = Math.floor(Math.random() * 13)+1;
     let worthFour = Math.floor(Math.random() * 13)+1;
-console.log(goal);
+    
+    console.log(goal);
     function initializeGame() {
-        goal = Math.floor(Math.random() * 120) + 19;
+        goal = Math.floor(Math.random() * 102) + 19;
         myScore = 0;
         console.log(goal)
-        
+        worthOne = Math.floor(Math.random() * 13)+1;
+        worthTwo = Math.floor(Math.random() * 13)+1;
+        worthThree = Math.floor(Math.random() * 13)+1;
+        worthFour = Math.floor(Math.random() * 13)+1;
+        $("#score").text(myScore);
+        $("#goalScore").text(goal);
     }
-    
+    initializeGame();
     $("#gemOne").on("click", function () {
-
+        
         $("#gemOne").attr("crystalValue", worthOne);
         let gemValue = ($(this).attr("crystalValue"));
         console.log(gemValue);
+        
         gemValue = parseInt(gemValue);
         myScore += gemValue;
         console.log(myScore);
+        $("#score").text(myScore += gemValue)
         if (myScore === goal){
             console.log("you win")
             wins++;
@@ -103,6 +110,7 @@ console.log(goal);
             $("#losses").text(losses);
             initializeGame();
         };
+        
     });
 
 
